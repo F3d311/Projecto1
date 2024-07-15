@@ -1,0 +1,69 @@
+Referencias maquetado e imagenes
+https://drive.google.com/file/d/1DZVfVbX23jlrBoGScjlyuOJntStzGx4R/view?usp=sharing
+
+Front base
+https://drive.google.com/file/d/1rMKyl3E9KIVe1envPC5wdHzt5OKIur5F/view?usp=sharing
+
+
+
+Form Usuario
+var userFormData={
+"id":"",
+"nombre":"",
+"fechaNacimiento":"",
+"sexo":"",
+"nacionalidad":"",
+"domicilio":"",
+"email":"",
+"celular":"",
+"password":"",
+"cargo":"",
+"rol":"",
+"imagen":""
+}
+
+-----------------
+
+//nombres = value
+var cargo=[
+"Asistente de campo",
+"Director técnico",
+"Preparador físico",
+"Jugador",
+"Staff"
+];
+
+
+//key value pairs
+var rol=[
+{nombre: "Administrador", id:1},
+{nombre: "Colaborador", id:2},
+{nombre: "Jugador", id:3}
+];
+
+----
+
+Eventos
+
+
+-On load: comprueba si userFormData["id"] esta asignado, en cuyo caso reemplaza los datos del form y pasa a ser "Editar usuario", caso contrario es "Crear usuario".
+-Imagen event change: agregar handler al evento que impacte a una url (de momento una dummy) y asigne las url de una imagen de momento de los assets placeholders en la carpeta)
+-Form on submit: que valide los datos, si estan correcto que haga un js alert de "guardado". si falla alguna validación de momento mostrar una alerta de fallido (noto ahora que nos falta el diseño de validación fallida, despues lo pasamos). En caso de success popular userFormData con la data del formulario y devolverlo por consola.
+Equipo Formulario
+
+var teamFormData={
+"id":"",
+"nombre":"",
+"escudo":"",
+"arquero":"",
+"jugador":"",
+"suplenete":""
+};
+
+-----
+
+Eventos
+
+-On load: comprueba si teamFormData["id"] esta asignado, en cuyo caso reemplaza los datos del form y pasa a ser "Editar equipo", caso contrario es "Crear equipo".
+-Escudo/arquero/jugador/suplente event change: agregar handler al evento que impacte a una url (de momento una dummy) y asigne las url de una imagen de momento de los assets placeholders en la carpeta). Manejar eventos separados para escudo y camisetas.
+-Form on submit: que valide los datos, si estan correctos que haga un js alert de "guardado". Si falla alguna validación de momento mostrar una alerta de fallido (noto ahora que nos falta el diseño de validación fallida, despues lo pasamos). En caso de success popular teamFormData con la data del formulario y devolverlo por consola.
