@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles1.css" />
+    <script src="script.js"></script>
+    <script src="shareModal.js"></script>
+    <script src="presentationsTable.js"></script>
+    <script src="usersTable.js"></script>
+    <script src="navigation.js"></script>
+    <script src="./tailwind.config.js"></script>
+    <title>Pizzara A3</title>
+  </head>
+  <body>
+    <section class="Usuarios">
+      <header>Usuarios</header>
+      <form action="#" method="post" id="Usuarios">
+        <label>Nombre y Apellido</label>
+        <input type="text" name="Nombre y Apellido" required />
+        <label>ID</label>
+        <input type="text" name="ID" required />
+        <label>Fecha de Nacimiento</label>
+        <input type="text" name="Fecha de Nacimiento" required />
+        <label>Sexo</label>
+        <input type="text" name="Sexo" required />
+        <label>Nacionalidad</label>
+        <input type="text" name="Nacionalidad" required />
+        <label>Direccion de email</label>
+        <input type="text" name="Direccion de email" required />
+        <label>Celular</label>
+        <input type="number" name="Celular" required />
+        <label>Nueva contraseña</label>
+        <input type="text" name="Nueva contraseña" required />
+        <label>Confirmar contraseña</label>
+        <input type="text" name="Confirmar contraseña" required />
+        <label>Cargo</label>
+        <select name="Cargo" id="lang" required>
+          <option>Director Tecnico</option>
+          <option>Ayudante de Campo</option>
+          <option>Preparador fisico</option>
+          <option>Entrenador de arqueros</option>
+          <option>Videoanalista</option>
+          <option>Medico</option>
+          <option>Psicologo/a</option>
+          <option>Fisioterapia</option>
+          <option>Otras</option>
+        </select>
+
+        <label>Rol</label>
+        <select name="Rol" id="lang" required>
+          <option>Administrador</option>
+          <option>Editor</option>
+          <option>Expectador</option>
+          <option>Colaborador</option>
+          <option>Supervisor</option>
+        </select>
+
+        <div class="field button">
+          <input type="submit" name="Nuevo" value="Nuevo" required />
+          <input type="submit" name="Guardar" value="Guarda" required />
+          <input type="submit" name="Actualizar" value="Actualizar" required />
+          <input type="submit" name="Eliminar" value="Eliminar" required />
+        </div>
+        <div class="link">Already Signup?<a href="login.php">Login Now</a></div>
+      </form>
+    </section>
+
+    <form action="/submit-url" method="post">
+      <!-- Esteboton enviara un formulario-->
+      <button type="submit">Enviar</button>
+    </form>
+    <!-- Boton reseteo-->
+    <form>
+      <!-- regresara los campos del formulario a sus valores predeterminados-->
+      <button type="reset">Reseteo</button>
+    </form>
+    <?php 
+      $id=$_post['id'];
+      $Nombre['id'];
+      $FechaNacimiento['id'];
+      $Sexo['id'];
+      $Nacionalidad['id'];
+      $email['id'];
+      $Celular['id'];
+      $contraseña['id'];
+
+      if(isset($_post['insertar'])){
+        $insertar="INSERT INTO registro(id, nombre, )";
+      }
+    >
+    <script src="Usuarios.js"></script>
+    <script src="password.js"></script>
+  </body>
+</html>

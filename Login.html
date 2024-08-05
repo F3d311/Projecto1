@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles2.css" />
+    <script src="script.js"></script>
+    <script src="shareModal.js"></script>
+    <script src="presentationsTable.js"></script>
+    <script src="usersTable.js"></script>
+    <script src="navigation.js"></script>
+    <script src="./tailwind.config.js"></script>
+    <title>Pizzara A3</title>
+  </head>
+  <body>
+    <!-- Formularios -->
+    <div class="contenedor-formularios">
+      <!-- Links de los formularios -->
+      <ul class="contenedor-tabs">
+        <li class="tab tab-segunda active">
+          <a href="#iniciar-sesion">Iniciar Sesión</a>
+        </li>
+        <li class="tab tab-primera"><a href="#registrarse">Registrarse</a></li>
+      </ul>
+
+      <!-- Contenido de los Formularios -->
+      <div class="contenido-tab">
+        <!-- Iniciar Sesion -->
+        <div id="iniciar-sesion">
+          <h1>Iniciar Sesión</h1>
+          <form action="#" method="post">
+            <div class="contenedor-input">
+              <label> ID <span class="req">*</span> </label>
+              <input type="text" required />
+            </div>
+
+            <div class="contenedor-input">
+              <label> Contraseña <span class="req">*</span> </label>
+              <input type="password" required />
+            </div>
+            <p class="forgot"><a href="#">Se te olvidó la contraseña?</a></p>
+            <input
+              type="submit"
+              class="button button-block"
+              value="Iniciar Sesión"
+            />
+          </form>
+        </div>
+
+        <!-- Registrarse -->
+        <div id="registrarse">
+          <h1>Registrarse</h1>
+          <form action="#" method="post">
+            <div class="fila-arriba">
+              <div class="contenedor-input">
+                <label> Nombre <span class="req">*</span> </label>
+                <input type="text" required />
+              </div>
+
+              <div class="contenedor-input">
+                <label> Apellido <span class="req">*</span> </label>
+                <input type="text" required />
+              </div>
+            </div>
+            <div class="contenedor-input">
+              <label> ID <span class="req">*</span> </label>
+              <input type="text" required />
+            </div>
+            <div class="contenedor-input">
+              <label> FechaNacimiento <span class="req">*</span> </label>
+              <input type="date" required />
+            </div>
+            <div class="contenedor-input">
+              <label> Sexo <span class="req">*</span> </label>
+              <input type="Sexo" required />
+            </div>
+            <div class="contenedor-input">
+              <label> Nacionalidad <span class="req">*</span> </label>
+              <input type="Nacionalidad" required />
+            </div>
+            <div class="contenedor-input">
+              <label> Email <span class="req">*</span> </label>
+              <input type="email" required />
+            </div>
+            <div class="contenedor-input">
+              <label> Calular <span class="req">*</span> </label>
+              <input type="Celular" required />
+            </div>
+            <div class="contenedor-input">
+              <label> Cargo <span class="req">*</span> </label>
+              <input type="text" required />
+              <select name="Cargo" id="lang" required>
+                <option>Director Tecnico</option>
+                <option>Ayudante de Campo</option>
+                <option>Preparador fisico</option>
+                <option>Entrenador de arqueros</option>
+                <option>Videoanalista</option>
+                <option>Medico</option>
+                <option>Psicologo/a</option>
+                <option>Fisioterapia</option>
+                <option>Otras</option>
+              </select>
+            </div>
+            <div class="contenedor-input">
+              <label> Rol <span class="req">*</span> </label>
+              <input type="text" required />
+              <select name="Rol" id="lang" required>
+                <option>Administrador</option>
+                <option>Editor</option>
+                <option>Expectador</option>
+                <option>Colaborador</option>
+                <option>Supervisor</option>
+              </select>
+            </div>
+            <div class="contenedor-input">
+              <label> Contraseña <span class="req">*</span> </label>
+              <input type="password" required />
+            </div>
+
+            <div class="contenedor-input">
+              <label> Repetir Contraseña <span class="req">*</span> </label>
+              <input type="password" required />
+            </div>
+
+            <input
+              type="submit"
+              class="button button-block"
+              value="Registrarse"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- foto:<input type="file" id="foto" name="foto"
+    <button type="button" id="guardardatos">Grabar</button> -->
+  </body>
+  <!-- <script type="text/javascript">
+    $(document).ready(function(){
+        $('#guardardatos').click(function(){
+          nombre_x=$('#nombre_x').val();
+          correo_x=$('#correo_x').val();
+          pass_x=$('#pass_x').val();
+          pais_x=$('#pais_x').val();
+    
+            RegistrarNuevo(Nombre,correo_x,pass_x,pais_x,foto_x);
+    
+        });
+    
+    }); 
+ </script> -->
+  <script src="js/jquery.js"></script>
+  <script src="js/main.js"></script>
+</html>
